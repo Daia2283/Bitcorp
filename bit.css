@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --hover: #face34;
+    --trans:ease-in 0.5s;
+}
+
+
+body{
+    background: url(body_bg.jpg);
+    background-position: center;
+    color: #ffffff
+    ;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 20px;
+ margin: 30px 50px;
+    
+}
+.container{
+    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    
+}
+
+
+img{
+    max-width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+.nav-bar{
+background: transparent;
+
+
+}
+.nav{
+    list-style-type: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+}
+.nav-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav-bar li{
+    padding: 15px;
+    font-size: 20px;
+ }
+ .nav-bar a:hover{
+    color: var(--hover);
+    transition: var(--trans);
+ }
+ .btn{
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    max-width: 225px;
+    height: 67px;
+    line-height: 67px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+    border: #ffffff solid 2px;
+  border-radius: 3px;
+    margin: 10px;
+   
+    cursor: pointer;
+ }
+ .btn:hover{
+    background: var(--hover);
+    transition: var(--trans);
+    border: none;
+ }
+ .heading img{
+max-width: 70%;
+ }
+ .heading h1{
+    font-size: 40px;
+    color: var(--hover);
+ }
+ .heading .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .boxes{
+     display: grid;
+    grid-gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ .box{
+    background: #fff;
+    padding: 25px 15px 50px;
+    color: #0f132d;
+    margin: 8px;
+    text-align: center;
+   
+ }
+ .box:hover{
+  color: #fff;
+    background: var(--hover);
+    transition: var(--trans);
+    
+   
+ }
+
+ #aboutus{
+    border-style: dashed;
+    border: #fff dashed 1px;
+    padding: 80px 80px;
+    margin: 5px;
+    text-align: center;
+ }
+ #aboutus h2{
+font-weight: 600;
+line-height: 55px;
+font-size: 45px;
+
+ } 
+ #aboutus p{
+    line-height: 33px;
+    padding: 30px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    font-size: 20px;
+    }
+    #aboutus .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #aboutus img{
+      max-width: 50%;
+   }
+ .logo2{
+    text-align: center;
+    scroll-margin-top: 20px;
+ }
+ .test{
+    border: #ffffff solid 2px;
+    padding:  80px 80px;
+    text-align: center;
+ }
+ .test h2{
+margin-bottom: 15px;
+font-size: 45px;
+ }
+ .test img{
+border-radius: 10%;
+ }
+ .test p{
+margin-bottom: 15px;
+font-size: 18px;
+ }
+ .lesson h2{
+     text-align: center;
+     font-size: 45px;
+     padding-bottom: 60px;
+ }
+ .lesson img{
+    cursor: pointer;
+ }
+ #contact input{
+    border: #404b65 solid 1px;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 79px;
+    background: transparent;
+    color: #5e687d;
+    font-size: 16px;
+    font-weight: normal;
+ }
+ #contact{
+    text-align: center;
+ }
+ .btn2{
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    max-width: 225px;
+    height: 67px;
+    line-height: 67px;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+    border: #ffffff solid 2px;
+  border-radius: 20px;
+    margin: 10px;
+ }
+ .btn2:hover:hover{
+    background: var(--hover);
+    transition: var(--trans);
+    border: none;
+ }
+ .contact h2{
+     text-align: center;
+    font-size: 45px;
+    padding-bottom: 60px;
+ }
+footer{
+    padding: 2rem;
+text-align: center;
+font-family:cursive;
+border-top: #ffffff solid 3px;
+margin: 2rem;
+}
+@media (max-width:700px ) {
+  .logo{
+   display: none;
+  }
+     .nav-bar .container{
+      display: flex;
+      flex-direction: column;
+     }
+     .nav-bar{
+      text-align: center;
+     }
+     .heading .container{
+      display: block;
+     }
+     .boxes{
+      display: grid;
+     grid-gap: 20px; 
+     grid-template-columns: 1fr;
+  }
+  #aboutus{
+   border-style: dashed;
+   border: #fff dashed 1px;
+   /* padding: 80px 80px; */
+   margin: 5px;
+   text-align: center;
+}
+#aboutus img{
+   max-width: 50%;
+}
+
+   #aboutus .container{
+       display: block;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       
+   }
+   #contact input{
+     width: 90%;
+  }
+ 
+}
